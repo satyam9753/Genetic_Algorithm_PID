@@ -1,12 +1,12 @@
 # Genetic Algorithms
 A genetic algorithm is a search heuristic that is inspired by Charles Darwin’s theory of natural evolution. This algorithm reflects the process of natural selection where the fittest individuals are selected for reproduction in order to produce offspring of the next generation.
 
-### Notion of Natural Selection
-The process of natural selection starts with the selection of fittest individuals from a population. They produce offspring which inherit the characteristics of the parents and will be added to the next generation. If parents have better fitness, their offspring will be better than parents and have a better chance at surviving. This process keeps on iterating and at the end, a generation with the fittest individuals will be found.
+### _Notion of Natural Selection_
+_The process of natural selection starts with the selection of fittest individuals from a population. They produce offspring which inherit the characteristics of the parents and will be added to the next generation. If parents have better fitness, their offspring will be better than parents and have a better chance at surviving. This process keeps on iterating and at the end, a generation with the fittest individuals will be found._
 
 This notion can be applied for a search problem. We consider a set of solutions for a problem and select the set of best ones out of them.
 
-### Five phases are considered in a genetic algorithm.
+### _Five phases are considered in a genetic algorithm-_
 * Initial population
 * Fitness function
 * Selection
@@ -49,7 +49,7 @@ The new offspring are added to the population.
 New offspring
 
 
-5. Mutation
+#### 5. Mutation
 
 In certain new offspring formed, some of their genes can be subjected to a mutation with a low random probability. This implies that some of the bits in the bit string can be flipped.
 Mutation: Before and After
@@ -60,32 +60,25 @@ Termination
 The algorithm terminates if the population has converged (does not produce offspring which are significantly different from the previous generation). Then it is said that the genetic algorithm has provided a set of solutions to our problem.
 Comments
 
-The population has a fixed size. As new generations are formed, individuals with least fitness die, providing space for new offspring.
+_The population has a fixed size. As new generations are formed, individuals with least fitness die, providing space for new offspring._
 
-The sequence of phases is repeated to produce individuals in each new generation which are better than the previous generation.
+_The sequence of phases is repeated to produce individuals in each new generation which are better than the previous generation._
 
 
-### PSEUDOCODE
+### Pseudocode
 
 START
 
-Generate the initial population
+ Generate the initial population
+ Compute fitness
+  REPEAT
+     Selection
+     Crossover
+     Mutation
+     Compute fitness
+  UNTIL population has converged
 
-Compute fitness
-
-REPEAT
-
-    Selection
-
-    Crossover
-
-    Mutation
- 
-    Compute fitness
-
-UNTIL population has converged
-
-STOP
+ STOP
 
 
 
