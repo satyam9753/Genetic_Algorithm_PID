@@ -70,12 +70,19 @@ _The sequence of phases is repeated to produce individuals in each new generatio
 START
 
  Generate the initial population
+ 
  Compute fitness
+ 
   REPEAT
+ 
      Selection
+ 
      Crossover
+ 
      Mutation
+ 
      Compute fitness
+ 
   UNTIL population has converged
 
  STOP
