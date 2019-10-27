@@ -68,14 +68,23 @@ The sequence of phases is repeated to produce individuals in each new generation
 ### PSEUDOCODE
 
 START
+
 Generate the initial population
+
 Compute fitness
+
 REPEAT
+
     Selection
+
     Crossover
+
     Mutation
+ 
     Compute fitness
+
 UNTIL population has converged
+
 STOP
 
 
