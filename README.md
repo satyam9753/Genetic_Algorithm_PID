@@ -1,12 +1,12 @@
-#Genetic Algorithms
+# Genetic Algorithms
 A genetic algorithm is a search heuristic that is inspired by Charles Darwin’s theory of natural evolution. This algorithm reflects the process of natural selection where the fittest individuals are selected for reproduction in order to produce offspring of the next generation.
 
-###Notion of Natural Selection
+### Notion of Natural Selection
 The process of natural selection starts with the selection of fittest individuals from a population. They produce offspring which inherit the characteristics of the parents and will be added to the next generation. If parents have better fitness, their offspring will be better than parents and have a better chance at surviving. This process keeps on iterating and at the end, a generation with the fittest individuals will be found.
 
 This notion can be applied for a search problem. We consider a set of solutions for a problem and select the set of best ones out of them.
 
-####Five phases are considered in a genetic algorithm.
+### Five phases are considered in a genetic algorithm.
 * Initial population
 * Fitness function
 * Selection
@@ -65,7 +65,7 @@ The population has a fixed size. As new generations are formed, individuals with
 The sequence of phases is repeated to produce individuals in each new generation which are better than the previous generation.
 
 
-###PSEUDOCODE
+### PSEUDOCODE
 
 START
 Generate the initial population
