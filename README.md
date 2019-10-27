@@ -13,7 +13,7 @@ This notion can be applied for a search problem. We consider a set of solutions 
 * Crossover
 * Mutation
 
-1. Initial Population
+#### 1. Initial Population
 
 The process begins with a set of individuals which is called a Population. Each individual is a solution to the problem you want to solve.
 
@@ -23,19 +23,19 @@ In a genetic algorithm, the set of genes of an individual is represented using a
 Population, Chromosomes and Genes
 
 
-2. Fitness Function
+#### 2. Fitness Function
 
 The fitness function determines how fit an individual is (the ability of an individual to compete with other individuals). It gives a fitness score to each individual. The probability that an individual will be selected for reproduction is based on its fitness score.
 
 
-3. Selection
+#### 3. Selection
 
 The idea of selection phase is to select the fittest individuals and let them pass their genes to the next generation.
 
 Two pairs of individuals (parents) are selected based on their fitness scores. Individuals with high fitness have more chance to be selected for reproduction.
 
 
-4. Crossover
+#### 4. Crossover
 
 Crossover is the most significant phase in a genetic algorithm. For each pair of parents to be mated, a crossover point is chosen at random from within the genes.
 
